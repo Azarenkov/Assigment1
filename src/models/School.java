@@ -3,7 +3,7 @@ package models;
 import java.util.ArrayList;
 
 public class School {
-    private ArrayList<Person> members = new ArrayList<>();
+    private final ArrayList<Person> members = new ArrayList<>();
 
     public void addMember(Person person) {
         members.add(person);

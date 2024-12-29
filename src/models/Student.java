@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class Student extends Person {
-    private static AtomicInteger idGenerator = new AtomicInteger(1);
-    private int studentID;
-    private ArrayList<Integer> grades = new ArrayList<>();
+    private static final AtomicInteger idGenerator = new AtomicInteger(1);
+    private final int studentID;
+    private final ArrayList<Integer> grades = new ArrayList<>();
 
     public Student(String name, String surname, int age, boolean gender, int grade) {
         super(name, surname, age, gender);
