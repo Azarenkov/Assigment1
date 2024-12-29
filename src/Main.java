@@ -40,13 +40,15 @@ public class Main {
         try (BufferedReader br = new BufferedReader(new FileReader("/Users/alexeyazarenkov/Downloads/Assigment1/src/students.txt"))) {
             String line;
             while ((line = br.readLine()) != null) {
-                String[] data = line.split(",");
+                String[] data = line.split(" ");
                 String name = data[0];
                 String surname = data[1];
                 int age = Integer.parseInt(data[2]);
                 boolean gender = Boolean.parseBoolean(data[3]);
-                int grade = Integer.parseInt(data[4]);
-                Student student = new Student(name, surname, age, gender, grade);
+                Student student = new Student(name, surname, age, gender, 0); // временная оценка
+                for (int i = 4; i < data.length; i++) {
+                    student.addGrade(Integer.parseInt(data[i]));
+                }
                 students.add(student);
             }
         } catch (IOException e) {
@@ -70,7 +72,7 @@ public class Main {
     }
 
     private static Teacher getTeacher(String line) {
-        String[] data = line.split(",");
+        String[] data = line.split(" ");
         String name = data[0];
         String surname = data[1];
         int age = Integer.parseInt(data[2]);

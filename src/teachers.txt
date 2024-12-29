@@ -1,4 +1,5 @@
-Emily,White,45,false,Math,20,50000
-Michael,Green,50,true,Science,25,55000
-Sarah,Black,35,false,English,12,48000
-David,Blue,40,true,History,15,52000
+Severus Snape 51 Male Math 7 800000
+Albus Dumbledore 71 Male Philosophy 25 1500000
+Minerva McGonagall 62 Female Sociology 17 1100000
+Bellatrix Lestrange 35 Female Programming 3 570000
+Sirius Black 49 Male Physics 9 750000
