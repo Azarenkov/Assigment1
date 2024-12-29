@@ -6,10 +6,30 @@ public class Person {
     private int age;
     private boolean gender;
 
-    public void addPerson(String name, String surname, int age, boolean gender) {
+    public Person(String name, String surname, int age, boolean gender) {
+        setName(name);
+        setSurname(surname);
+        setAge(age);
+        setGender(gender);
+    }
+
+    public void setName(String name) {
         this.name = name;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
         this.surname = surname;
+    }
+
+    public void setAge(int age) {
         this.age = age;
+    }
+
+    public void setGender(boolean gender) {
         this.gender = gender;
     }
 

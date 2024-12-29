@@ -1,0 +1,4 @@
+John,Doe,16,true,85
+Jane,Smith,17,false,90
+Alice,Johnson,15,false,88
+Bob,Brown,16,true,92
