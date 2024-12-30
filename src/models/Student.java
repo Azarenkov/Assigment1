@@ -8,10 +8,9 @@ public class Student extends Person {
     private final int studentID;
     private final ArrayList<Integer> grades = new ArrayList<>();
 
-    public Student(String name, String surname, int age, boolean gender, int grade) {
+    public Student(String name, String surname, int age, boolean gender) {
         super(name, surname, age, gender);
         this.studentID = idGenerator.getAndIncrement();
-        addGrade(grade);
     }
 
     public void addGrade(int grade) {

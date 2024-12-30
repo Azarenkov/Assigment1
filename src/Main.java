@@ -45,7 +45,7 @@ public class Main {
                 String surname = data[1];
                 int age = Integer.parseInt(data[2]);
                 boolean gender = Boolean.parseBoolean(data[3]);
-                Student student = new Student(name, surname, age, gender, 0); // временная оценка
+                Student student = new Student(name, surname, age, gender);
                 for (int i = 4; i < data.length; i++) {
                     student.addGrade(Integer.parseInt(data[i]));
                 }
